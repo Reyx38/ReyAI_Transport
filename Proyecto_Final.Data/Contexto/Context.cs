@@ -10,6 +10,7 @@ public class Context(DbContextOptions<Context> options) : DbContext(options)
     public DbSet<Taxistas> Taxistas { get; set; }
     public DbSet<Viajes> Viajes { get; set; }
     public DbSet<Imagen> Imagenes { get; set; }
+    public DbSet<Reservaciones> Reservaciones { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
